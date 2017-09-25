@@ -64,7 +64,7 @@ if __name__ == '__main__':
     xml_uri = 'https://www.coursera.org/sitemap~www~courses.xml'
     parser = argparse.ArgumentParser(description='this is a coursera random courses grabber.')
     parser.add_argument('-c', '--count', help='How much courses do you want to scrape (default: 5)', required=False)
-    parser.add_argument('-o', '--output', help='Output excel file name (default: courses.xml)', required=False)
+    parser.add_argument('-o', '--output', help='Output excel file name (default: courses.xlsx)', required=False)
     args = parser.parse_args()
     courses_count = args.count or 5
     filename = args.output or 'courses.xlsx'
